@@ -2,20 +2,20 @@ package com.linux0.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+/*import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.openfeign.EnableFeignClients;*/
 
 @SpringBootApplication
 //配置文件可自动刷新
-@RefreshScope
+//@RefreshScope
 //开启eureka客户端
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 //开启feign
-@EnableFeignClients
+//@EnableFeignClients
 //短路器
-@EnableHystrix
+//@EnableHystrix
 public class ProviderApplication {
 
     public static void main(String[] args) {

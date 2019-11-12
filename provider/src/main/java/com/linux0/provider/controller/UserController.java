@@ -2,8 +2,8 @@ package com.linux0.provider.controller;
 
 import com.linux0.provider.dao.UserRepository;
 import com.linux0.provider.entity.User;
-import com.linux0.provider.feign.UserFeign;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+//import com.linux0.provider.feign.UserFeign;
+//import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,8 +21,8 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    UserFeign userFeign;
+   /* @Autowired
+    UserFeign userFeign;*/
 
     @GetMapping("/{id}")
     public User findById(@PathVariable Long id) {
@@ -44,10 +44,10 @@ public class UserController {
      * @param id
      * @return
      */
-    @GetMapping("/user/{id}")
+    /*@GetMapping("/user/{id}")
     public User UserfindByid(@PathVariable Long id){
        return userFeign.findById(id);
-    }
+    }*/
 
 
 }
